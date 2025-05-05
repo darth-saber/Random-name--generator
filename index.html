@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random Name Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Random Name Generator</h1>
+        <p class="subtitle">Select gender and generate a random full name</p>
+        <div class="dark-mode-toggle">
+            <label for="dark-mode-checkbox">Dark Mode</label>
+            <input type="checkbox" id="dark-mode-checkbox" />
+        </div>
+        <div class="gender-selection">
+            <label><input type="radio" name="gender" value="random" checked /> Random</label>
+            <label><input type="radio" name="gender" value="male" /> Male</label>
+            <label><input type="radio" name="gender" value="female" /> Female</label>
+        </div>
+        <div class="name-type-selection">
+            <label><input type="radio" name="nameType" value="full" checked /> Full Name</label>
+            <label><input type="radio" name="nameType" value="first" /> First Name Only</label>
+            <label><input type="radio" name="nameType" value="last" /> Last Name Only</label>
+            <label><input type="radio" name="nameType" value="couple" /> Married Couple with Kids</label>
+        </div>
+        <div class="multiple-names">
+            <label for="num-names">Number of names:</label>
+            <input type="number" id="num-names" name="num-names" min="1" max="10" value="1" />
+        </div>
+        <div class="multiple-kids" style="display:none;">
+            <label for="num-kids">Number of kids:</label>
+            <input type="number" id="num-kids" name="num-kids" min="0" max="10" value="0" />
+        </div>
+        <button id="generate-btn" title="Generate Name(s)">
+            &#128295; Generate Name(s)
+        </button>
+        <button id="copy-btn" title="Copy to clipboard">
+            &#128203; Copy
+        </button>
+        <button id="clear-btn" title="Clear names">
+            &#10060; Clear
+        </button>
+        <div id="name-display" class="name-display">Click the button to generate a name</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

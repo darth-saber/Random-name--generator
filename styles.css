@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s ease;
+    color: #222;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    text-align: center;
+    width: 360px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.dark-mode-toggle {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.gender-selection,
+.name-type-selection,
+.multiple-names {
+    margin-bottom: 1.5rem;
+}
+
+.gender-selection label,
+.name-type-selection label,
+.multiple-names label {
+    margin: 0 0.75rem;
+    font-size: 0.95rem;
+    color: #444;
+    cursor: pointer;
+    user-select: none;
+}
+
+.gender-selection input[type="radio"],
+.name-type-selection input[type="radio"] {
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+
+.multiple-names {
+    font-size: 0.95rem;
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multiple-names input[type="number"] {
+    width: 50px;
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+button {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,123,255,0.4);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #0056b3, #003d7a);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,86,179,0.6);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 6px rgba(0,123,255,0.3);
+}
+
+#copy-btn, #clear-btn {
+    background: linear-gradient(45deg, #28a745, #1e7e34);
+    box-shadow: 0 4px 8px rgba(40,167,69,0.4);
+}
+
+#copy-btn:hover, #clear-btn:hover {
+    background: linear-gradient(45deg, #1e7e34, #145c24);
+    box-shadow: 0 6px 12px rgba(30,126,52,0.6);
+}
+
+#copy-btn:active, #clear-btn:active {
+    box-shadow: 0 2px 6px rgba(40,167,69,0.3);
+}
+
+.name-display {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+    min-height: 2rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 1;
+}
+
+.name-display.fade-out {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.name-display.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: #121212;
+    color: #eee;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    color: #eee;
+    box-shadow: 0 8px 24px rgba(255,255,255,0.1);
+}
+
+body.dark-mode button {
+    box-shadow: 0 4px 8px rgba(255,255,255,0.2);
+}
+
+body.dark-mode button:hover {
+    box-shadow: 0 6px 12px rgba(255,255,255,0.3);
+}
+
+body.dark-mode #copy-btn, body.dark-mode #clear-btn {
+    background: linear-gradient(45deg, #28a745, #1e7e34);
+    box-shadow: 0 4px 8px rgba(40,167,69,0.6);
+}
+
+body.dark-mode #copy-btn:hover, body.dark-mode #clear-btn:hover {
+    box-shadow: 0 6px 12px rgba(30,126,52,0.8);
+}
