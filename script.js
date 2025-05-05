@@ -21,6 +21,22 @@ const maleFirstNames = [
     "Miguel", "Atlas", "Zion", "Paxton", "Damien", "Gage", "Zayden"
 ];
 
+const kidsMaleNames = [
+    "Aiden", "Brayden", "Caleb", "Dylan", "Ethan", "Finn", "Gavin", "Hunter",
+    "Isaac", "Jackson", "Kai", "Liam", "Mason", "Noah", "Owen", "Parker",
+    "Quinn", "Ryan", "Samuel", "Tyler", "Wyatt", "Xander", "Zachary", "Eli",
+    "Jaxon", "Levi", "Miles", "Nolan", "Ryder", "Sawyer", "Tanner", "Zane",
+    "Blake", "Carter", "Declan", "Easton", "Felix", "Grayson", "Hudson",
+    "Jace", "Kaden", "Logan", "Maddox", "Nathan", "Paxton", "Reid", "Silas",
+    "Titus", "Vince", "Weston", "Xavier", "Zion", "Asher", "Beckett", "Colton",
+    "Damian", "Emmett", "Finnley", "Gage", "Harrison", "Jasper", "Kameron",
+    "Landon", "Maverick", "Nash", "Orion", "Phoenix", "Quentin", "Roman",
+    "Seth", "Tristan", "Victor", "Wesley", "Xander", "Zayden", "Axel", "Bryce",
+    "Caden", "Dawson", "Elliot", "Finley", "Greyson", "Hayden", "Iker", "Jude",
+    "Kian", "Luca", "Maxwell", "Nico", "Omar", "Porter", "Rhett", "Sullivan",
+    "Troy", "Vaughn", "Walker", "Zander"
+];
+
 const femaleFirstNames = [
     "Alice", "Diana", "Fiona", "Hannah", "Julia", "Laura", "Nina", "Paula",
     "Rachel", "Tina", "Wendy", "Yara", "Bella", "Delilah", "Faith", "Hailey",
@@ -37,6 +53,23 @@ const femaleFirstNames = [
     "Jade", "Julia", "Melanie", "Kylie", "Mackenzie", "Reagan", "Bailey", "Jocelyn",
     "Katherine", "Alyssa", "Aubree", "Cora", "Vivienne", "Liliana", "Hadley",
     "Melody", "Lauren", "Isabelle", "Morgan", "Brianna", "Maria", "Reese", "Adeline"
+];
+
+const kidsFemaleNames = [
+    "Aaliyah", "Addison", "Alexa", "Alice", "Amelia", "Ariana", "Aubrey",
+    "Autumn", "Ava", "Bella", "Brooke", "Camila", "Caroline", "Charlotte",
+    "Chloe", "Claire", "Delilah", "Ella", "Emily", "Emma", "Eva", "Faith",
+    "Gabriella", "Grace", "Hailey", "Hannah", "Isabella", "Jade", "Jasmine",
+    "Julia", "Kaitlyn", "Kaylee", "Kennedy", "Kylie", "Lily", "Lucy", "Madeline",
+    "Madison", "Maya", "Mia", "Natalie", "Nevaeh", "Nora", "Olivia", "Peyton",
+    "Riley", "Ruby", "Samantha", "Sarah", "Savannah", "Scarlett", "Sofia",
+    "Sophia", "Stella", "Sydney", "Taylor", "Trinity", "Violet", "Zoe",
+    "Zuri", "Arianna", "Bailey", "Brianna", "Camryn", "Catherine", "Delaney",
+    "Elena", "Eliana", "Emery", "Everly", "Genesis", "Gianna", "Gracie",
+    "Hadley", "Isabelle", "Jocelyn", "Jordan", "Josephine", "Kendall", "Khloe",
+    "Lila", "Liliana", "Lillian", "London", "Mackenzie", "Mckenna", "Melanie",
+    "Morgan", "Paisley", "Penelope", "Piper", "Reagan", "Rylee", "Sage",
+    "Sienna", "Skylar", "Teagan", "Valentina", "Vivian", "Willow", "Zara"
 ];
 
 const lastNames = [
